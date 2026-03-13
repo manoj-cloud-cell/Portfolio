@@ -1,0 +1,403 @@
+/* ─────────────────────────────
+   RESET & BASE
+───────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #f5f9f0;
+  color: #2d3b1f;
+}
+
+/* ─────────────────────────────
+   NAVBAR
+───────────────────────────── */
+nav {
+  background-color: #2d3b1f;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: #a8d560;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  color: #f5f9f0;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+nav ul a:hover {
+  color: #a8d560;
+}
+
+/* ─────────────────────────────
+   HERO
+───────────────────────────── */
+.hero {
+  background-color: #d6e8b4;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  color: #2d3b1f;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #4a5e30;
+  margin-bottom: 32px;
+}
+
+.hero a {
+  background-color: #4a7c2f;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-size: 16px;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero a:hover {
+  background-color: #5e9e3a;
+  transform: scale(1.05);
+}
+
+/* ─────────────────────────────
+   SERVICES
+───────────────────────────── */
+.services {
+  padding: 70px 40px;
+  text-align: center;
+  background-color: #f5f9f0;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #2d3b1f;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #6b7d50;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 30px 24px;
+  width: 240px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(8px);
+ 
+}
+
+.card .icon {
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #2d3b1f;
+}
+
+.card p {
+  font-size: 14px;
+  color: #7a8c60;
+  line-height: 1.6;
+}
+
+.card .tag {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #e2f0c8;
+  color: #4a7c2f;
+}
+
+.crops {
+  padding: 70px 40px;
+  text-align: center;
+  background-color: #eaf4dc;
+}
+
+.crops h2 {
+  font-size: 36px;
+  color: #2d3b1f;
+  margin-bottom: 10px;
+}
+
+.crop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.crop-card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 28px 22px;
+  width: 220px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.crop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+.crop-icon {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.crop-card h3 {
+  font-size: 18px;
+  color: #2d3b1f;
+  margin-bottom: 8px;
+}
+
+.crop-card p {
+  font-size: 13px;
+  color: #7a8c60;
+  line-height: 1.6;
+}
+
+.crop-meta {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.crop-meta span {
+  font-size: 12px;
+  color: #4a7c2f;
+  background-color: #e2f0c8;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.schedule {
+  background-color: #2d3b1f;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.schedule h2 {
+  font-size: 36px;
+  color: #a8d560;
+  margin-bottom: 10px;
+}
+
+.schedule .sub {
+  color: #8a9e68;
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #1e2c12;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #4a7c2f;
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 14px 20px;
+  color: #c8daa0;
+  font-size: 15px;
+  border-bottom: 1px solid #3a4e28;
+  transition: background-color 0.3s;
+}
+
+tr:hover td {
+  background-color: #28391a;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+.testimonials {
+  padding: 70px 40px;
+  text-align: center;
+  background-color: #f5f9f0;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  color: #2d3b1f;
+  margin-bottom: 10px;
+}
+
+.reviews {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: #fff;
+  border-left: 4px solid #4a7c2f;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 280px;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.review p {
+  font-size: 14px;
+  color: #4a5e30;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.review .name {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d3b1f;
+  font-style: normal;
+}
+
+.stars {
+  color: #e8a840;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact {
+  background-color: #d6e8b4;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #2d3b1f;
+  margin-bottom: 10px;
+}
+
+.contact .sub {
+  color: #4a5e30;
+  margin-bottom: 36px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 13px 16px;
+  border: 1px solid #a0bc78;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+  font-family: Georgia, serif;
+  color: #2d3b1f;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #4a7c2f;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contact button {
+  background-color: #4a7c2f;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+  background-color: #5e9e3a;
+  transform: scale(1.04);
+}
+footer {
+  background-color: #2d3b1f;
+  color: #8a9e68;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
+
+footer span {
+  color: #a8d560;
+}
